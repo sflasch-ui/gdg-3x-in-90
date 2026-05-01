@@ -1,4 +1,4 @@
-// Tab navigation
+// ============ TAB NAVIGATION ============
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabPanels = document.querySelectorAll('.tab-panel');
 
@@ -6,11 +6,9 @@ tabBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const target = btn.dataset.tab;
 
-    // Update buttons
     tabBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
-    // Update panels
     tabPanels.forEach(panel => {
       panel.classList.remove('active');
       if (panel.id === `tab-${target}`) {
@@ -18,9 +16,25 @@ tabBtns.forEach(btn => {
       }
     });
 
-    // Scroll to top of content area smoothly
     document.querySelector('.tab-content-area').scrollIntoView({
       behavior: 'smooth', block: 'start'
     });
+  });
+});
+
+// ============ VIEW TOGGLE (Summary / Detail) ============
+const viewBtns = document.querySelectorAll('.view-btn');
+
+// Set default view
+document.body.setAttribute('data-view', 'summary');
+
+viewBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const view = btn.dataset.view;
+
+    viewBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.body.setAttribute('data-view', view);
   });
 });
