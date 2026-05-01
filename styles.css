@@ -725,6 +725,132 @@ body {
   margin-top: 2px;
 }
 
+/* ============ ACCORDION ============ */
+.accordion-item {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: box-shadow 0.15s ease;
+}
+
+.accordion-item.open {
+  box-shadow: var(--shadow-md);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  color: white;
+  text-align: left;
+  transition: filter 0.15s ease;
+  gap: 12px;
+}
+
+.accordion-header:hover {
+  filter: brightness(1.08);
+}
+
+.accordion-header.blue  { background: linear-gradient(135deg, var(--sf-blue), var(--sf-navy)); }
+.accordion-header.teal  { background: linear-gradient(135deg, var(--sf-teal), var(--sf-blue)); }
+.accordion-header.purple { background: linear-gradient(135deg, var(--sf-purple), var(--sf-navy)); }
+.accordion-header.orange { background: linear-gradient(135deg, var(--sf-orange), #8B3A0F); }
+
+.acc-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.acc-number {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.acc-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.3px;
+}
+
+.acc-sub {
+  display: block;
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 2px;
+}
+
+.acc-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.acc-metric {
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.acc-chevron {
+  color: rgba(255,255,255,0.8);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.accordion-item.open .acc-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  display: none;
+  padding: 24px;
+  background: var(--sf-gray-100);
+  border-top: 1px solid var(--sf-gray-200);
+}
+
+.accordion-item.open .accordion-body {
+  display: block;
+}
+
+/* ============ COMMITMENTS SECTION ============ */
+.commitments-section {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* ============ FOOTER ============ */
 .site-footer {
   background: var(--sf-navy);

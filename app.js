@@ -1,3 +1,10 @@
+// ============ ACCORDION ============
+function toggleAccordion(id) {
+  const item = document.getElementById(id);
+  if (!item) return;
+  item.classList.toggle('open');
+}
+
 // ============ TAB NAVIGATION ============
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabPanels = document.querySelectorAll('.tab-panel');

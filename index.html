@@ -78,15 +78,9 @@
   <nav class="tab-nav" id="tabNav">
     <div class="tab-nav-inner">
       <button class="tab-btn active" data-tab="overview">At a Glance</button>
-      <button class="tab-btn" data-tab="pillar1">Pillar 1: Iterative Governance</button>
-      <button class="tab-btn" data-tab="pillar2">Pillar 2: Modernization</button>
-      <button class="tab-btn" data-tab="pillar3">Pillar 3: Governance by Design</button>
-      <button class="tab-btn" data-tab="pillar4">Pillar 4: Internal Productivity</button>
-      <button class="tab-btn" data-tab="progress">Progress to Date</button>
-      <button class="tab-btn" data-tab="stopped">What We Stopped</button>
-      <button class="tab-btn" data-tab="partnerships">Partnerships</button>
+      <button class="tab-btn" data-tab="pillars">3X in 90</button>
+      <button class="tab-btn" data-tab="status">May Status Update</button>
       <button class="tab-btn" data-tab="ai">AI at Work</button>
-      <button class="tab-btn" data-tab="commitments">Commitments</button>
       <button class="tab-btn" data-tab="v2mom">V2MOM Evolution</button>
     </div>
   </nav>
@@ -94,13 +88,12 @@
   <!-- TAB CONTENT -->
   <main class="tab-content-area">
 
-    <!-- OVERVIEW -->
+    <!-- ============ AT A GLANCE ============ -->
     <section class="tab-panel active" id="tab-overview">
       <div class="panel-inner">
         <h2 class="panel-title">The 3X Bets at a Glance</h2>
         <p class="panel-intro">Three pillars serve the field. One pillar serves the team. All four are in motion.</p>
         <div class="pillar-cards">
-
           <div class="pillar-card" data-color="blue">
             <div class="card-number">P1</div>
             <div class="card-body">
@@ -110,7 +103,6 @@
               <div class="card-metric">8 hpw reclaimed from Geo alignment conversations</div>
             </div>
           </div>
-
           <div class="pillar-card" data-color="teal">
             <div class="card-number">P2</div>
             <div class="card-body">
@@ -120,7 +112,6 @@
               <div class="card-metric">½ FTE/week field BAU deflected</div>
             </div>
           </div>
-
           <div class="pillar-card" data-color="purple">
             <div class="card-number">P3</div>
             <div class="card-body">
@@ -130,7 +121,6 @@
               <div class="card-metric">Risk standardization reduces escalation overhead globally</div>
             </div>
           </div>
-
           <div class="pillar-card" data-color="orange">
             <div class="card-number">P4</div>
             <div class="card-body">
@@ -140,18 +130,13 @@
               <div class="card-metric">~1 FTE-equivalent/week reclaimed</div>
             </div>
           </div>
-
         </div>
 
         <div class="overview-table-wrap">
           <h3 class="section-subtitle">Total Efficiency Gains</h3>
           <table class="data-table">
             <thead>
-              <tr>
-                <th>Pillar</th>
-                <th>Who It Serves</th>
-                <th>Estimated Gains</th>
-              </tr>
+              <tr><th>Pillar</th><th>Who It Serves</th><th>Estimated Gains</th></tr>
             </thead>
             <tbody>
               <tr>
@@ -184,283 +169,291 @@
       </div>
     </section>
 
-    <!-- PILLAR 1 -->
-    <section class="tab-panel" id="tab-pillar1">
+    <!-- ============ 3X IN 90 (PILLARS + COMMITMENTS) ============ -->
+    <section class="tab-panel" id="tab-pillars">
       <div class="panel-inner">
+        <h2 class="panel-title">3X in 90</h2>
+        <p class="panel-intro">Click any pillar to expand the full detail. Use the Summary / Detail toggle in the header to switch views.</p>
 
-        <!-- SUMMARY VIEW -->
-        <div class="summary-view-block">
-          <div class="evp-card blue">
-            <div class="evp-card-top">
-              <span class="evp-pillar-label">Pillar 1</span>
+        <!-- PILLAR 1 -->
+        <div class="accordion-item" id="acc-p1">
+          <button class="accordion-header blue" onclick="toggleAccordion('acc-p1')">
+            <div class="acc-header-left">
+              <span class="acc-number">P1</span>
+              <div>
+                <span class="acc-title">Iterative Governance Evolution</span>
+                <span class="acc-sub">Field — GDC, LATAM, EMEA, AMER</span>
+              </div>
+            </div>
+            <div class="acc-header-right">
               <span class="confidence medium-high">Medium-High</span>
+              <span class="acc-metric">8 hpw reclaimed</span>
+              <svg class="acc-chevron" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
             </div>
-            <h2>Iterative Governance Evolution</h2>
-            <p class="evp-serves">Field — GDC, LATAM, EMEA, AMER</p>
-            <p class="evp-objective">Pilot governance frameworks across 4 project teams spanning 3 GEOs using a deploy-measure-pivot model, releasing key field-facing deliverables that reduce Geo Lead alignment overhead and establish a repeatable prototype for rapid governance adoption.</p>
-            <div class="evp-metrics">
-              <div class="evp-metric"><span class="evp-metric-number">4</span><span class="evp-metric-label">Project teams in pilot</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">3</span><span class="evp-metric-label">Field deliverables published</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">8 hpw</span><span class="evp-metric-label">Reclaimed from Geo alignment</span></div>
+          </button>
+          <div class="accordion-body">
+
+            <!-- SUMMARY VIEW -->
+            <div class="summary-view-block">
+              <div class="evp-card blue">
+                <div class="evp-card-top">
+                  <span class="evp-pillar-label">Pillar 1</span>
+                  <span class="confidence medium-high">Medium-High</span>
+                </div>
+                <h2>Iterative Governance Evolution</h2>
+                <p class="evp-serves">Field — GDC, LATAM, EMEA, AMER</p>
+                <p class="evp-objective">Pilot governance frameworks across 4 project teams spanning 3 GEOs using a deploy-measure-pivot model, releasing key field-facing deliverables that reduce Geo Lead alignment overhead and establish a repeatable prototype for rapid governance adoption.</p>
+                <div class="evp-metrics">
+                  <div class="evp-metric"><span class="evp-metric-number">4</span><span class="evp-metric-label">Project teams in pilot</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">3</span><span class="evp-metric-label">Field deliverables published</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">8 hpw</span><span class="evp-metric-label">Reclaimed from Geo alignment</span></div>
+                </div>
+                <div class="evp-progress"><strong>Already in motion:</strong> Pilot GEOs confirmed. SPSM Steerco approval from Greg Adams. MVG pre-circulated in AMER. GDC session Monday. Innovation POCing Internal KO Deck.</div>
+              </div>
             </div>
-            <div class="evp-progress">
-              <strong>Already in motion:</strong> Pilot GEOs confirmed. SPSM Steerco approval from Greg Adams. MVG pre-circulated in AMER. GDC session Monday. Innovation POCing Internal KO Deck.
+
+            <!-- DETAIL VIEW -->
+            <div class="detail-view-block">
+              <div class="form-grid">
+                <div class="form-card"><div class="form-label">Objective</div><div class="form-value">Pilot governance frameworks across 4 project teams spanning 3 GEOs using a deploy-measure-pivot model, releasing 3 key field-facing deliverables that reduce Geo Lead alignment overhead and establish a repeatable prototype for rapid governance adoption.</div></div>
+                <div class="form-card"><div class="form-label">Baseline</div><div class="form-value">No ARI governance prototypes deployed in the field. No published Engagement Roadmap or Internal Kick Off Deck. Geo Leads spending an estimated 8+ hpw/week in initiative timeline conversations and alignment check-ins with this team.</div></div>
+                <div class="form-card"><div class="form-label">Target</div><div class="form-value">MVG prototype live across 4 project teams (1 GDC, 1 LATAM, 1 EMEA, 1 AMER). Internal KO Deck, Customer Facing KO Deck &amp; Engagement Roadmap published. 8 hpw/week reclaimed from Geo Lead alignment conversations.</div></div>
+                <div class="form-card"><div class="form-label">Lever</div><div class="form-value">MVG methodology — pilot first, pivot fast if no measurable value within the pilot window. Slackbot Skills to automate delivery guidance. Publication of field-facing deliverables to shift from reactive alignment to self-serve.</div></div>
+                <div class="form-card full-width"><div class="form-label">90-Day Outcome</div><div class="form-value">MVG prototype running in 4 project teams across 3 GEOs. Slackbot Skills developed, tested, and released to field. Internal KO Deck, Customer Facing KO Deck, and Engagement Roadmap published and in active field use. 8 hpw/week reclaimed from initiative alignment conversations.</div></div>
+                <div class="form-card"><div class="form-label">Efficiency Gains Extended To</div><div class="form-value">GDC, LATAM, EMEA, AMER (pilot GEOs)</div></div>
+                <div class="form-card"><div class="form-label">Confidence</div><div class="form-value"><span class="confidence medium-high">Medium-High</span></div></div>
+              </div>
             </div>
+
           </div>
         </div>
 
-        <!-- DETAIL VIEW -->
-        <div class="detail-view-block">
-        <div class="pillar-header blue">
-          <span class="pillar-label">Pillar 1</span>
-          <h2>Iterative Governance Evolution</h2>
-          <p>Piloting governance frameworks in the field using MVG methodology</p>
-        </div>
-        <div class="form-grid">
-          <div class="form-card">
-            <div class="form-label">Objective</div>
-            <div class="form-value">Pilot governance frameworks across 4 project teams spanning 3 GEOs using a deploy-measure-pivot model, releasing 3 key field-facing deliverables that reduce Geo Lead alignment overhead and establish a repeatable prototype for rapid governance adoption.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Baseline</div>
-            <div class="form-value">No ARI governance prototypes deployed in the field. No published Engagement Roadmap or Internal Kick Off Deck. Geo Leads spending an estimated 8+ hpw/week in initiative timeline conversations and alignment check-ins with this team.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Target</div>
-            <div class="form-value">MVG prototype live across 4 project teams (1 GDC, 1 LATAM, 1 EMEA, 1 AMER). Internal KO Deck, Customer Facing KO Deck &amp; Engagement Roadmap published. 8 hpw/week reclaimed from Geo Lead alignment conversations.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Lever</div>
-            <div class="form-value">MVG (Minimum Viable Governance) methodology — pilot first, pivot fast if no measurable value within the pilot window. Slackbot Skills to automate delivery guidance. Publication of field-facing deliverables to shift from reactive alignment to self-serve.</div>
-          </div>
-          <div class="form-card full-width">
-            <div class="form-label">90-Day Outcome</div>
-            <div class="form-value">MVG prototype running in 4 project teams across 3 GEOs. Slackbot Skills developed, tested, and released to field. Internal KO Deck, Customer Facing KO Deck, and Engagement Roadmap published and in active field use. 8 hpw/week reclaimed from initiative alignment conversations.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Efficiency Gains Extended To</div>
-            <div class="form-value">GDC, LATAM, EMEA, AMER (pilot GEOs)</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Confidence</div>
-            <div class="form-value"><span class="confidence medium-high">Medium-High</span></div>
-          </div>
-        </div>
-        </div><!-- end detail-view-block -->
-      </div>
-    </section>
-
-    <!-- PILLAR 2 -->
-    <section class="tab-panel" id="tab-pillar2">
-      <div class="panel-inner">
-
-        <!-- SUMMARY VIEW -->
-        <div class="summary-view-block">
-          <div class="evp-card teal">
-            <div class="evp-card-top">
-              <span class="evp-pillar-label">Pillar 2</span>
+        <!-- PILLAR 2 -->
+        <div class="accordion-item" id="acc-p2">
+          <button class="accordion-header teal" onclick="toggleAccordion('acc-p2')">
+            <div class="acc-header-left">
+              <span class="acc-number">P2</span>
+              <div>
+                <span class="acc-title">Modernization of Delivery</span>
+                <span class="acc-sub">Field — Practices, Offers, GDC</span>
+              </div>
+            </div>
+            <div class="acc-header-right">
               <span class="confidence medium-high">Medium-High</span>
+              <span class="acc-metric">½ FTE/week deflected</span>
+              <svg class="acc-chevron" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
             </div>
-            <h2>Modernization of Delivery</h2>
-            <p class="evp-serves">Field — Practices, Offers, GDC</p>
-            <p class="evp-objective">Establish current-state baselines across 3 delivery outcomes and deploy AI-enabled Slackbot Skills to deflect recurring field support requests — reducing BAU burden on field teams and retiring manual workflows.</p>
-            <div class="evp-metrics">
-              <div class="evp-metric"><span class="evp-metric-number">3</span><span class="evp-metric-label">Outcomes baselined</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">3</span><span class="evp-metric-label">Slackbot Skills in testing now</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">½ FTE</span><span class="evp-metric-label">Field BAU deflected per week</span></div>
+          </button>
+          <div class="accordion-body">
+
+            <!-- SUMMARY VIEW -->
+            <div class="summary-view-block">
+              <div class="evp-card teal">
+                <div class="evp-card-top">
+                  <span class="evp-pillar-label">Pillar 2</span>
+                  <span class="confidence medium-high">Medium-High</span>
+                </div>
+                <h2>Modernization of Delivery</h2>
+                <p class="evp-serves">Field — Practices, Offers, GDC</p>
+                <p class="evp-objective">Establish current-state baselines across 3 delivery outcomes and deploy AI-enabled Slackbot Skills to deflect recurring field support requests — reducing BAU burden on field teams and retiring manual workflows.</p>
+                <div class="evp-metrics">
+                  <div class="evp-metric"><span class="evp-metric-number">3</span><span class="evp-metric-label">Outcomes baselined</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">3</span><span class="evp-metric-label">Slackbot Skills in testing now</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">½ FTE</span><span class="evp-metric-label">Field BAU deflected per week</span></div>
+                </div>
+                <div class="evp-progress"><strong>Already in motion:</strong> G&amp;O ERD alignment secured. 3 Skills in testing (Delivery Assurance, Margin Management, ARI Governance). Journey mapping owner hired — starting 5/17.</div>
+              </div>
             </div>
-            <div class="evp-progress">
-              <strong>Already in motion:</strong> G&amp;O ERD alignment secured. 3 Skills in testing (Delivery Assurance, Margin Management, ARI Governance). Journey mapping owner hired — starting 5/17.
+
+            <!-- DETAIL VIEW -->
+            <div class="detail-view-block">
+              <div class="form-grid">
+                <div class="form-card"><div class="form-label">Objective</div><div class="form-value">Establish current-state baselines across 3 delivery outcomes and deploy AI-enabled Slackbot Skills to deflect recurring field support requests — reducing BAU burden on field teams by ½ FTE/week and retiring manual SPSM/Jira workflows.</div></div>
+                <div class="form-card"><div class="form-label">Baseline</div><div class="form-value">No Current State Journey Maps exist across any outcomes. SPSM/Jira integration is entirely manual (~4 hpw). Field teams directing an estimated ½ FTE/week toward BAU support. No Delivery Assurance, Margin Management, or ARI Governance Skills deployed.</div></div>
+                <div class="form-card"><div class="form-label">Target</div><div class="form-value">3 outcomes defined with journey maps and baselines established (Change Management, Strategic Roadmap, COE). All 3 Slackbot Skills deployed, deflecting ½ FTE/week in field BAU. SPSM/Jira integration automated, saving ~4 hpw.</div></div>
+                <div class="form-card"><div class="form-label">Lever</div><div class="form-value">Current State Journey Maps as baseline input. Delivery Assurance, Margin Management, and ARI Governance Slackbot Skills (all currently in testing). G&amp;O-aligned ERD for Offers/Outcomes/MVG. Automated SPSM/Jira integration to retire manual workflow.</div></div>
+                <div class="form-card full-width"><div class="form-label">90-Day Outcome</div><div class="form-value">Current state journey maps complete across 3 outcomes (Change Management, Strategic Roadmap, COE). All 3 Slackbot Skills live in field and measurably deflecting BAU support (target: ½ FTE/week). SPSM/Jira integration automated saving ~4 hpw.</div></div>
+                <div class="form-card"><div class="form-label">Efficiency Gains Extended To</div><div class="form-value">Practices, Offers, GDC, Solutioning COE, Innovation</div></div>
+                <div class="form-card"><div class="form-label">Confidence</div><div class="form-value"><span class="confidence medium-high">Medium-High</span> — 3 Skills already in testing; G&amp;O ERD alignment secured; journey mapping owner hired 5/17</div></div>
+              </div>
             </div>
+
           </div>
         </div>
 
-        <!-- DETAIL VIEW -->
-        <div class="detail-view-block">
-        <div class="pillar-header teal">
-          <span class="pillar-label">Pillar 2</span>
-          <h2>Modernization of Delivery</h2>
-          <p>Establishing delivery baselines and deploying AI-enabled Skills to deflect recurring field support requests</p>
-        </div>
-        <div class="form-grid">
-          <div class="form-card">
-            <div class="form-label">Objective</div>
-            <div class="form-value">Establish current-state baselines across 3 delivery outcomes and deploy AI-enabled Slackbot Skills to deflect recurring field support requests — reducing BAU burden on field teams by ½ FTE/week and retiring manual SPSM/Jira workflows.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Baseline</div>
-            <div class="form-value">No Current State Journey Maps exist across any outcomes. SPSM/Jira integration is entirely manual (~4 hpw). Field teams directing an estimated ½ FTE/week toward BAU support (SPSM questions, ARI governance queries). No Delivery Assurance, Margin Management, or ARI Governance Skills deployed.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Target</div>
-            <div class="form-value">3 outcomes defined with journey maps and baselines established (Change Management, Strategic Roadmap, COE). All 3 Slackbot Skills deployed, deflecting ½ FTE/week in field BAU. SPSM/Jira integration automated, saving ~4 hpw.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Lever</div>
-            <div class="form-value">Current State Journey Maps as baseline input. Delivery Assurance, Margin Management, and ARI Governance Slackbot Skills (all currently in testing) to deflect field support requests. G&amp;O-aligned ERD for Offers/Outcomes/MVG as the structural foundation. Automated SPSM/Jira integration to retire manual workflow.</div>
-          </div>
-          <div class="form-card full-width">
-            <div class="form-label">90-Day Outcome</div>
-            <div class="form-value">Current state journey maps complete across 3 outcomes (Change Management, Strategic Roadmap, COE) with baselines established. All 3 Slackbot Skills live in field and measurably deflecting BAU support (target: ½ FTE/week). SPSM/Jira integration automated saving ~4 hpw.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Efficiency Gains Extended To</div>
-            <div class="form-value">Practices, Offers, GDC, Solutioning COE, Innovation</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Confidence</div>
-            <div class="form-value"><span class="confidence medium-high">Medium-High</span> — 3 Skills already in testing; G&amp;O ERD alignment secured; journey mapping owner hired with start date of 5/17</div>
-          </div>
-        </div>
-        </div><!-- end detail-view-block -->
-      </div>
-    </section>
-
-    <!-- PILLAR 3 -->
-    <section class="tab-panel" id="tab-pillar3">
-      <div class="panel-inner">
-
-        <!-- SUMMARY VIEW -->
-        <div class="summary-view-block">
-          <div class="evp-card purple">
-            <div class="evp-card-top">
-              <span class="evp-pillar-label">Pillar 3</span>
+        <!-- PILLAR 3 -->
+        <div class="accordion-item" id="acc-p3">
+          <button class="accordion-header purple" onclick="toggleAccordion('acc-p3')">
+            <div class="acc-header-left">
+              <span class="acc-number">P3</span>
+              <div>
+                <span class="acc-title">Governance by Design</span>
+                <span class="acc-sub">Field — All GEOs</span>
+              </div>
+            </div>
+            <div class="acc-header-right">
               <span class="confidence medium-high">Medium-High</span>
+              <span class="acc-metric">Global risk library published</span>
+              <svg class="acc-chevron" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
             </div>
-            <h2>Governance by Design</h2>
-            <p class="evp-serves">Field — All GEOs</p>
-            <p class="evp-objective">Make governance invisible to consultants by embedding globally standardized risk definitions and AI-driven risk intelligence directly into delivery workflows — compliance becomes a natural outcome, not a separate task.</p>
-            <div class="evp-metrics">
-              <div class="evp-metric"><span class="evp-metric-number">All GEOs</span><span class="evp-metric-label">Risk definitions standardized</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">1</span><span class="evp-metric-label">Unified risk library published</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">LT</span><span class="evp-metric-label">Risk Agent on longer-term roadmap</span></div>
+          </button>
+          <div class="accordion-body">
+
+            <!-- SUMMARY VIEW -->
+            <div class="summary-view-block">
+              <div class="evp-card purple">
+                <div class="evp-card-top">
+                  <span class="evp-pillar-label">Pillar 3</span>
+                  <span class="confidence medium-high">Medium-High</span>
+                </div>
+                <h2>Governance by Design</h2>
+                <p class="evp-serves">Field — All GEOs</p>
+                <p class="evp-objective">Make governance invisible to consultants by embedding globally standardized risk definitions and AI-driven risk intelligence directly into delivery workflows — compliance becomes a natural outcome, not a separate task.</p>
+                <div class="evp-metrics">
+                  <div class="evp-metric"><span class="evp-metric-number">All GEOs</span><span class="evp-metric-label">Risk definitions standardized</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">1</span><span class="evp-metric-label">Unified risk library published</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">LT</span><span class="evp-metric-label">Risk Agent on longer-term roadmap</span></div>
+                </div>
+                <div class="evp-progress"><strong>Already in motion:</strong> Risk definition consolidation underway using Claude + Slackbot. Proactive Risk Agent in conversation with Innovation — confirmed as longer-term initiative.</div>
+              </div>
             </div>
-            <div class="evp-progress">
-              <strong>Already in motion:</strong> Risk definition consolidation underway using Claude + Slackbot. Proactive Risk Agent in conversation with Innovation — confirmed as longer-term initiative.
+
+            <!-- DETAIL VIEW -->
+            <div class="detail-view-block">
+              <div class="form-grid">
+                <div class="form-card"><div class="form-label">Objective</div><div class="form-value">Make governance invisible to consultants by embedding globally standardized risk definitions and proactive AI-driven risk intelligence directly into delivery workflows — so compliance and risk awareness are a natural outcome of how consultants work, not an external layer they manage separately.</div></div>
+                <div class="form-card"><div class="form-label">Baseline</div><div class="form-value">No globally standardized definitions for project or portfolio risk exist in documented form. Delivery leadership has no proactive risk signal mechanism. Consultants navigate governance requirements manually with no embedded guidance.</div></div>
+                <div class="form-card"><div class="form-label">Target</div><div class="form-value">Global standard project and portfolio risk definitions consolidated, documented, and published across all GEOs. Delivery metrics from existing Metric Dictionary incorporated into the risk library. Foundation established for Proactive Risk Agent development (longer-term initiative, beyond 90-day window).</div></div>
+                <div class="form-card"><div class="form-label">Lever</div><div class="form-value">Claude and Slackbot consolidating existing risk documentation into a unified framework. Cross-GEO alignment to validate shared risk language with Geo Leads. Delivery metrics folded into risk library. Innovation partnership engaged for longer-term Risk Agent roadmap.</div></div>
+                <div class="form-card full-width"><div class="form-label">90-Day Outcome</div><div class="form-value">Global risk definitions consolidated using AI, documented, validated with Geo Leads, and published. Delivery metrics incorporated into the risk library as foundational inputs. Proactive Risk Agent scoped in longer-term planning with Innovation — not a 90-day deliverable, but partnership and roadmap position confirmed.</div></div>
+                <div class="form-card"><div class="form-label">Efficiency Gains Extended To</div><div class="form-value">All GEOs (risk standardization reduces ambiguity and escalation overhead). Practices, Offers. Innovation (clear BRs accelerate build).</div></div>
+                <div class="form-card"><div class="form-label">Confidence</div><div class="form-value"><span class="confidence medium-high">Medium-High</span> (risk definitions — AI-assisted consolidation already underway) &nbsp;·&nbsp; <span class="confidence medium">Medium</span> (Risk Agent — longer-term)</div></div>
+              </div>
             </div>
+
           </div>
         </div>
 
-        <!-- DETAIL VIEW -->
-        <div class="detail-view-block">
-        <div class="pillar-header purple">
-          <span class="pillar-label">Pillar 3</span>
-          <h2>Governance by Design</h2>
-          <p>Embedding globally standardized risk standards and AI-driven delivery intelligence into field workflows</p>
-        </div>
-        <div class="form-grid">
-          <div class="form-card">
-            <div class="form-label">Objective</div>
-            <div class="form-value">Make governance invisible to consultants by embedding globally standardized risk definitions and proactive AI-driven risk intelligence directly into delivery workflows — so compliance and risk awareness are a natural outcome of how consultants work, not an external layer they manage separately.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Baseline</div>
-            <div class="form-value">No globally standardized definitions for project or portfolio risk exist in documented form. Delivery leadership has no proactive risk signal mechanism. Consultants navigate governance requirements manually with no embedded guidance. Business requirements for a Proactive Risk Agent have not been authored.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Target</div>
-            <div class="form-value">Global standard project and portfolio risk definitions consolidated, documented, and published across all GEOs. Delivery metrics from existing Metric Dictionary incorporated into the risk library as a unified framework. Foundation established for Proactive Risk Agent development (longer-term initiative, beyond 90-day window).</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Lever</div>
-            <div class="form-value">Claude and Slackbot used to consolidate existing risk documentation into a unified framework. Cross-GEO alignment process to validate shared risk language with Geo Leads. Delivery metrics folded into risk library rather than maintained as a standalone obligation. Innovation partnership engaged for longer-term Risk Agent roadmap.</div>
-          </div>
-          <div class="form-card full-width">
-            <div class="form-label">90-Day Outcome</div>
-            <div class="form-value">Global risk definitions (project and portfolio) consolidated using AI, documented, validated with Geo Leads, and published. Delivery metrics incorporated into the risk library as foundational inputs. Proactive Risk Agent scoped in longer-term planning with Innovation — not a 90-day deliverable, but partnership and roadmap position confirmed.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Efficiency Gains Extended To</div>
-            <div class="form-value">All GEOs (risk standardization reduces ambiguity and escalation overhead). Practices, Offers (methodology alignment). Innovation (clear BRs accelerate build and reduce rework).</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Confidence</div>
-            <div class="form-value"><span class="confidence medium-high">Medium-High</span> (risk definitions — AI-assisted consolidation already underway) &nbsp;·&nbsp; <span class="confidence medium">Medium</span> (Risk Agent — longer-term, dependent on Innovation roadmap)</div>
-          </div>
-        </div>
-        </div><!-- end detail-view-block -->
-      </div>
-    </section>
-
-    <!-- PILLAR 4 -->
-    <section class="tab-panel" id="tab-pillar4">
-      <div class="panel-inner">
-
-        <!-- SUMMARY VIEW -->
-        <div class="summary-view-block">
-          <div class="evp-card orange">
-            <div class="evp-card-top">
-              <span class="evp-pillar-label">Pillar 4</span>
+        <!-- PILLAR 4 -->
+        <div class="accordion-item" id="acc-p4">
+          <button class="accordion-header orange" onclick="toggleAccordion('acc-p4')">
+            <div class="acc-header-left">
+              <span class="acc-number">P4</span>
+              <div>
+                <span class="acc-title">Internal Productivity</span>
+                <span class="acc-sub">GDG Team (internal)</span>
+              </div>
+            </div>
+            <div class="acc-header-right">
               <span class="confidence high">High</span>
+              <span class="acc-metric">~1 FTE-equivalent/week reclaimed</span>
+              <svg class="acc-chevron" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5"/></svg>
             </div>
-            <h2>Internal Productivity</h2>
-            <p class="evp-serves">GDG Team (internal)</p>
-            <p class="evp-objective">Replace reactive, manual overhead with AI-assisted workflows — freeing approximately 1 FTE-equivalent of weekly capacity so the team can spend more time building the future and less time managing the present.</p>
-            <div class="evp-metrics">
-              <div class="evp-metric"><span class="evp-metric-number">20+ hpw</span><span class="evp-metric-label">Recoverable overhead today</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">5 days → 2</span><span class="evp-metric-label">BR writing cycle time</span></div>
-              <div class="evp-metric"><span class="evp-metric-number">~1 FTE</span><span class="evp-metric-label">Equivalent capacity reclaimed/week</span></div>
+          </button>
+          <div class="accordion-body">
+
+            <!-- SUMMARY VIEW -->
+            <div class="summary-view-block">
+              <div class="evp-card orange">
+                <div class="evp-card-top">
+                  <span class="evp-pillar-label">Pillar 4</span>
+                  <span class="confidence high">High</span>
+                </div>
+                <h2>Internal Productivity</h2>
+                <p class="evp-serves">GDG Team (internal)</p>
+                <p class="evp-objective">Replace reactive, manual overhead with AI-assisted workflows — freeing approximately 1 FTE-equivalent of weekly capacity so the team can spend more time building the future and less time managing the present.</p>
+                <div class="evp-metrics">
+                  <div class="evp-metric"><span class="evp-metric-number">20+ hpw</span><span class="evp-metric-label">Recoverable overhead today</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">5 days → 2</span><span class="evp-metric-label">BR writing cycle time</span></div>
+                  <div class="evp-metric"><span class="evp-metric-number">~1 FTE</span><span class="evp-metric-label">Equivalent capacity reclaimed/week</span></div>
+                </div>
+                <div class="evp-progress"><strong>Already in motion:</strong> "About Us" context file in active use. Intake process designed. Prompt library building in Slack. CS Agent Library access secured — review starts next week.</div>
+                <div class="evp-discussion">💡 <strong>Discussion point:</strong> The AI-assisted intake model was designed to scale beyond GDG — potentially across Nate's full org. We'd welcome the group's reaction before taking it further.</div>
+              </div>
             </div>
-            <div class="evp-progress">
-              <strong>Already in motion:</strong> "About Us" context file in active use. Intake process designed. Prompt library building in Slack. CS Agent Library access secured — review starts next week.
+
+            <!-- DETAIL VIEW -->
+            <div class="detail-view-block">
+              <div class="form-grid">
+                <div class="form-card"><div class="form-label">Objective</div><div class="form-value">Replace the reactive, manual overhead consuming the GDG team's strategic capacity — unstructured intake, slow BR writing, constant stakeholder re-alignment, undeflected BAU, and untapped automation reuse — with AI-assisted workflows that free approximately 1 FTE-equivalent of weekly capacity for roadmap execution.</div></div>
+                <div class="form-card"><div class="form-label">Baseline</div><div class="form-value">No structured intake process (requests triaged reactively, no BVR scoring). BR writing takes up to 5 days (~20% of one team member's weekly capacity per BR). No published Living Roadmap, generating ~8 hpw/week in recurring stakeholder alignment. ~12 hpw/week consumed by BAU support. No team prompt library or shared AI context file. CS automation inventory never assessed for delivery reuse. <strong>Estimated recoverable overhead: 20+ hpw/week.</strong></div></div>
+                <div class="form-card"><div class="form-label">Target</div><div class="form-value">Intake process live with AI-assisted BVR scoring. BR cycle reduced from 5 days to 1-2 days (60-80% reduction). Living Roadmap published and self-serve, reclaiming ~8 hpw/week. BAU deflected via AI tooling, reclaiming ~10 hpw/week. Prompt library and "About Us" context file live. CS automation AI audit completed. <strong>Total target: ~1 FTE-equivalent of capacity reclaimed per week.</strong></div></div>
+                <div class="form-card"><div class="form-label">Lever</div><div class="form-value">Structured intake workflow with AI-assisted BVR scoring. Claude + Cursor BR drafting templates (replacing 5-day manual cycle). Living Roadmap published on cadence. AI-enabled BAU deflection tools. Team "About Us" context file and shared prompt library for consistent AI output across all 5 team members. AI-powered audit of CS automation inventory to identify automations portable to delivery processes.</div></div>
+                <div class="form-card full-width"><div class="form-label">90-Day Outcome</div><div class="form-value">Intake process designed, documented, and live. BR drafting workflow AI-assisted and averaging 1-2 day cycle time. Living Roadmap published and updating on cadence, eliminating ad hoc alignment conversations. BAU deflection toolkit deployed with hpw tracking in place. Team prompt library and "About Us" context file in active use by all 5 team members. AI audit of CS automation inventory completed — portable candidates identified and recommendation handed to transformation team.</div></div>
+                <div class="form-card"><div class="form-label">Efficiency Gains Extended To</div><div class="form-value">GDG Team (primary). Innovation (faster BRs reduces build rework). Customer Success (automation reuse). Field (governance frameworks delivered faster as a downstream effect).</div></div>
+                <div class="form-card"><div class="form-label">Confidence</div><div class="form-value"><span class="confidence high">High</span> (intake, BR workflow, Living Roadmap, prompt library — all within team control) &nbsp;·&nbsp; <span class="confidence medium">Medium</span> (BAU deflection, CS audit)</div></div>
+              </div>
+              <div class="callout-box orange-callout" style="margin-top:16px">
+                <strong>💡 Discussion Point — Not a Decision</strong><br/>
+                The AI-assisted intake process has been designed with broader applicability in mind. Our POV is that this model could scale across Nate's full org — not just GDG. We'd welcome the group's reaction to this idea before we take it further.
+              </div>
             </div>
-            <div class="evp-discussion">
-              💡 <strong>Discussion point:</strong> The AI-assisted intake model was designed to scale beyond GDG — potentially across Nate's full org. We'd welcome the group's reaction before taking it further.
+
+          </div>
+        </div>
+
+        <!-- COMMITMENTS SECTION -->
+        <div class="commitments-section">
+          <h3 class="section-subtitle">90-Day Commitments</h3>
+          <p class="panel-intro" style="margin-top:-8px">What you can hold us to — and what we need from this room to get there.</p>
+
+          <table class="data-table">
+            <thead>
+              <tr><th>Pillar</th><th>90-Day Commitment</th><th>Confidence</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="pill blue">P1</span> Iterative Governance Evolution</td>
+                <td>MVG live in 4 teams. Internal KO Deck, Customer Facing KO Deck &amp; Engagement Roadmap published.</td>
+                <td><span class="confidence medium-high">Medium-High</span></td>
+              </tr>
+              <tr>
+                <td><span class="pill teal">P2</span> Modernization of Delivery</td>
+                <td>Current state journey maps complete. All 3 Skills live in field. SPSM/Jira automated.</td>
+                <td><span class="confidence medium-high">Medium-High</span></td>
+              </tr>
+              <tr>
+                <td><span class="pill purple">P3</span> Governance by Design</td>
+                <td>Global risk definitions published. Risk library live with metrics incorporated. Risk Agent confirmed on longer-term roadmap with Innovation.</td>
+                <td><span class="confidence medium-high">Medium-High</span></td>
+              </tr>
+              <tr>
+                <td><span class="pill orange">P4</span> Internal Productivity</td>
+                <td>Intake live. BR workflow at 1-2 days. Living Roadmap published. CS audit recommendations to transformation team.</td>
+                <td><span class="confidence high">High</span> (core) / <span class="confidence medium">Medium</span> (CS audit)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-subtitle" style="margin-top:24px">What We Need From This Room</h3>
+          <div class="ask-cards">
+            <div class="ask-card">
+              <div class="ask-number">1</div>
+              <div class="ask-body"><strong>Enablement ownership transition</strong><br/>Conversations with Amy Dykstra are in progress but not yet aligned. LT support in closing this will directly free Michele and Lauren for transformation work.</div>
+            </div>
+            <div class="ask-card">
+              <div class="ask-number">2</div>
+              <div class="ask-body"><strong>Geo Lead pilot participation</strong><br/>We have GEO confirmation and Steerco approval. We need continued Geo Lead engagement through the full 90-day window.</div>
+            </div>
+            <div class="ask-card">
+              <div class="ask-number">3</div>
+              <div class="ask-body"><strong>CS automation connections</strong><br/>We have the CS Agent Library. If there are additional automation owners we should connect with, we'd welcome the introduction.</div>
             </div>
           </div>
         </div>
 
-        <!-- DETAIL VIEW -->
-        <div class="detail-view-block">
-        <div class="pillar-header orange">
-          <span class="pillar-label">Pillar 4</span>
-          <h2>Internal Productivity</h2>
-          <p>Reclaiming the GDG team's strategic capacity by replacing manual overhead with AI-enabled operations</p>
-        </div>
-        <div class="form-grid">
-          <div class="form-card">
-            <div class="form-label">Objective</div>
-            <div class="form-value">Replace the reactive, manual overhead consuming the GDG team's strategic capacity — unstructured intake, slow BR writing, constant stakeholder re-alignment, undeflected BAU, and untapped automation reuse — with AI-assisted workflows that free approximately 1 FTE-equivalent of weekly capacity for roadmap execution.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Baseline</div>
-            <div class="form-value">No structured intake process (requests triaged reactively, no BVR scoring). BR writing takes up to 5 days (~20% of one team member's weekly capacity per BR). No published Living Roadmap, generating ~8 hpw/week in recurring stakeholder alignment. ~12 hpw/week consumed by BAU support. No team prompt library or shared AI context file. CS automation inventory never assessed for delivery reuse. <strong>Estimated recoverable overhead: 20+ hpw/week.</strong></div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Target</div>
-            <div class="form-value">Intake process live with AI-assisted BVR scoring. BR cycle reduced from 5 days to 1-2 days (60-80% reduction). Living Roadmap published and self-serve, reclaiming ~8 hpw/week. BAU deflected via AI tooling, reclaiming ~10 hpw/week. Prompt library and "About Us" context file live. CS automation AI audit completed. <strong>Total target: ~1 FTE-equivalent of capacity reclaimed per week.</strong></div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Lever</div>
-            <div class="form-value">Structured intake workflow with AI-assisted BVR scoring. Claude + Cursor BR drafting templates (replacing 5-day manual cycle). Living Roadmap published on cadence. AI-enabled BAU deflection tools. Team "About Us" context file and shared prompt library for consistent AI output across all 5 team members. AI-powered audit of CS automation inventory to identify automations portable to delivery processes.</div>
-          </div>
-          <div class="form-card full-width">
-            <div class="form-label">90-Day Outcome</div>
-            <div class="form-value">Intake process designed, documented, and live. BR drafting workflow AI-assisted and averaging 1-2 day cycle time. Living Roadmap published and updating on cadence, eliminating ad hoc alignment conversations. BAU deflection toolkit deployed with hpw tracking in place. Team prompt library and "About Us" context file in active use by all 5 team members. AI audit of CS automation inventory completed — portable candidates identified and recommendation handed to transformation team.</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Efficiency Gains Extended To</div>
-            <div class="form-value">GDG Team (primary). Innovation (faster BRs reduces build rework). Customer Success (automation reuse). Field (governance frameworks delivered faster as a downstream effect).</div>
-          </div>
-          <div class="form-card">
-            <div class="form-label">Confidence</div>
-            <div class="form-value"><span class="confidence high">High</span> (intake, BR workflow, Living Roadmap, prompt library — all within team control) &nbsp;·&nbsp; <span class="confidence medium">Medium</span> (BAU deflection, CS audit)</div>
-          </div>
-        </div>
-
-        <div class="callout-box orange-callout">
-          <strong>💡 Discussion Point — Not a Decision</strong><br/>
-          The AI-assisted intake process has been designed with broader applicability in mind. Our POV is that this model could scale across Nate's full org — not just GDG. We'd welcome the group's reaction to this idea before we take it further.
-        </div>
-        </div><!-- end detail-view-block -->
       </div>
     </section>
 
-    <!-- PROGRESS TO DATE -->
-    <section class="tab-panel" id="tab-progress">
+    <!-- ============ MAY STATUS UPDATE ============ -->
+    <section class="tab-panel" id="tab-status">
       <div class="panel-inner">
-        <h2 class="panel-title">Progress to Date</h2>
-        <p class="panel-intro">We didn't wait for a starting gun. All 4 pillars have meaningful momentum before the 90-day clock officially starts.</p>
+        <h2 class="panel-title">May Status Update</h2>
+        <p class="panel-intro">Where we are, what we changed, and who we need.</p>
+
+        <!-- PROGRESS TO DATE -->
+        <h3 class="section-subtitle">Progress to Date</h3>
+        <p style="font-size:14px; color:var(--sf-gray-600); margin-top:-8px; margin-bottom:8px">We didn't wait for a starting gun. All 4 pillars have meaningful momentum before the 90-day clock officially starts.</p>
 
         <div class="progress-block">
           <div class="progress-pillar-header blue">Pillar 1 — Iterative Governance Evolution</div>
@@ -502,17 +495,12 @@
             <li><span class="check in-progress">🟡</span> Team actively norming on Claude, Cursor, and Slackbot — AI-first operating model taking shape</li>
           </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- WHAT WE STOPPED -->
-    <section class="tab-panel" id="tab-stopped">
-      <div class="panel-inner">
-        <h2 class="panel-title">What We Stopped or Paused</h2>
-        <p class="panel-intro">Every initiative is scored against the Business Value Rubric before we commit. To make room for these 4 pillars, we made four deliberate decisions.</p>
+        <!-- WHAT WE STOPPED -->
+        <h3 class="section-subtitle" style="margin-top:12px">What We Stopped or Paused</h3>
+        <p style="font-size:14px; color:var(--sf-gray-600); margin-top:-8px; margin-bottom:8px">Every initiative is scored against the Business Value Rubric before we commit. To make room for these 4 pillars, we made four deliberate decisions.</p>
 
         <div class="stopped-grid">
-
           <div class="stopped-card red">
             <div class="stopped-icon">✋</div>
             <h3>Stopped Completely</h3>
@@ -558,25 +546,15 @@
             </ul>
             <div class="stopped-rationale">This elevates a reactive ownership burden into a strategic input. One less standalone obligation; one stronger Pillar 3 output.</div>
           </div>
-
         </div>
-      </div>
-    </section>
 
-    <!-- PARTNERSHIPS -->
-    <section class="tab-panel" id="tab-partnerships">
-      <div class="panel-inner">
-        <h2 class="panel-title">Partnerships That Make This Possible</h2>
-        <p class="panel-intro">We cannot do this alone. These are the partnerships required — and the ones we need LT help to unlock.</p>
+        <!-- PARTNERSHIPS -->
+        <h3 class="section-subtitle" style="margin-top:12px">Partnerships That Make This Possible</h3>
+        <p style="font-size:14px; color:var(--sf-gray-600); margin-top:-8px; margin-bottom:8px">We cannot do this alone. These are the partnerships required — and the ones we need LT help to unlock.</p>
 
         <table class="data-table">
           <thead>
-            <tr>
-              <th>Partner</th>
-              <th>What We Need</th>
-              <th>Pillar</th>
-              <th>Status</th>
-            </tr>
+            <tr><th>Partner</th><th>What We Need</th><th>Pillar</th><th>Status</th></tr>
           </thead>
           <tbody>
             <tr>
@@ -624,14 +602,15 @@
           </tbody>
         </table>
 
-        <div class="callout-box">
+        <div class="callout-box" style="margin-top:16px">
           <strong>Ask of the Room</strong><br/>
           The Enablement transition to Amy Dykstra is the one dependency without hard alignment. Who in this room can help accelerate that conversation? Closing it directly frees Michele and Lauren for transformation work.
         </div>
+
       </div>
     </section>
 
-    <!-- AI AT WORK -->
+    <!-- ============ AI AT WORK ============ -->
     <section class="tab-panel" id="tab-ai">
       <div class="panel-inner">
         <h2 class="panel-title">Where AI Is Doing the Work</h2>
@@ -639,10 +618,7 @@
 
         <table class="data-table">
           <thead>
-            <tr>
-              <th>Pillar</th>
-              <th>How AI Is Being Used</th>
-            </tr>
+            <tr><th>Pillar</th><th>How AI Is Being Used</th></tr>
           </thead>
           <tbody>
             <tr>
@@ -685,74 +661,7 @@
       </div>
     </section>
 
-    <!-- COMMITMENTS -->
-    <section class="tab-panel" id="tab-commitments">
-      <div class="panel-inner">
-        <h2 class="panel-title">90-Day Commitments</h2>
-        <p class="panel-intro">What you can hold us to — and what we need from this room to get there.</p>
-
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Pillar</th>
-              <th>90-Day Commitment</th>
-              <th>Confidence</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="pill blue">P1</span> Iterative Governance Evolution</td>
-              <td>MVG live in 4 teams. Internal KO Deck, Customer Facing KO Deck &amp; Engagement Roadmap published.</td>
-              <td><span class="confidence medium-high">Medium-High</span></td>
-            </tr>
-            <tr>
-              <td><span class="pill teal">P2</span> Modernization of Delivery</td>
-              <td>Current state journey maps complete. All 3 Skills live in field. SPSM/Jira automated.</td>
-              <td><span class="confidence medium-high">Medium-High</span></td>
-            </tr>
-            <tr>
-              <td><span class="pill purple">P3</span> Governance by Design</td>
-              <td>Global risk definitions published. Risk library live with metrics incorporated. Risk Agent confirmed on longer-term roadmap with Innovation.</td>
-              <td><span class="confidence medium-high">Medium-High</span></td>
-            </tr>
-            <tr>
-              <td><span class="pill orange">P4</span> Internal Productivity</td>
-              <td>Intake live. BR workflow at 1-2 days. Living Roadmap published. CS audit recommendations to transformation team.</td>
-              <td><span class="confidence high">High</span> (core) / <span class="confidence medium">Medium</span> (CS audit)</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="asks-section">
-          <h3 class="section-subtitle">What We Need From This Room</h3>
-          <div class="ask-cards">
-            <div class="ask-card">
-              <div class="ask-number">1</div>
-              <div class="ask-body">
-                <strong>Enablement ownership transition</strong><br/>
-                Conversations with Amy Dykstra are in progress but not yet aligned. LT support in closing this will directly free Michele and Lauren for transformation work.
-              </div>
-            </div>
-            <div class="ask-card">
-              <div class="ask-number">2</div>
-              <div class="ask-body">
-                <strong>Geo Lead pilot participation</strong><br/>
-                We have GEO confirmation and Steerco approval. We need continued Geo Lead engagement through the full 90-day window.
-              </div>
-            </div>
-            <div class="ask-card">
-              <div class="ask-number">3</div>
-              <div class="ask-body">
-                <strong>CS automation connections</strong><br/>
-                We have the CS Agent Library. If there are additional automation owners we should connect with, we'd welcome the introduction.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- V2MOM EVOLUTION -->
+    <!-- ============ V2MOM EVOLUTION ============ -->
     <section class="tab-panel" id="tab-v2mom">
       <div class="panel-inner">
         <h2 class="panel-title">V2MOM Evolution</h2>
@@ -761,10 +670,7 @@
         <h3 class="section-subtitle">Methods Being Accelerated</h3>
         <table class="data-table">
           <thead>
-            <tr>
-              <th>Method</th>
-              <th>What's Changing</th>
-            </tr>
+            <tr><th>Method</th><th>What's Changing</th></tr>
           </thead>
           <tbody>
             <tr>
