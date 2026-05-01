@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  height: 64px;
+  height: 48px;
 }
 
 .header-logo {
@@ -84,15 +84,15 @@ body {
 }
 
 .header-title {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
   color: white;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
 }
 
 .header-subtitle {
-  font-size: 13px;
-  color: rgba(255,255,255,0.65);
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
 }
 
 .header-meta {
@@ -108,28 +108,32 @@ body {
 /* ============ INTRO BANNER ============ */
 .intro-banner {
   background: linear-gradient(135deg, var(--sf-blue) 0%, var(--sf-navy) 100%);
-  padding: 40px 24px;
+  padding: 16px 24px;
   color: white;
 }
 
 .intro-inner {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
 }
 
 .intro-vision {
-  font-size: 20px;
+  font-size: 14px;
   font-style: italic;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 16px;
-  color: rgba(255,255,255,0.95);
+  color: rgba(255,255,255,0.9);
+  margin: 0;
 }
 
 .intro-sub {
-  font-size: 14px;
-  color: rgba(255,255,255,0.75);
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* ============ SUMMARY BAR ============ */
@@ -152,19 +156,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 40px;
-  gap: 4px;
+  padding: 12px 28px;
+  gap: 2px;
 }
 
 .stat-number {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--sf-blue);
   line-height: 1;
 }
 
 .stat-label {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--sf-gray-600);
   text-align: center;
   max-width: 120px;
@@ -172,7 +176,7 @@ body {
 
 .summary-divider {
   width: 1px;
-  height: 40px;
+  height: 28px;
   background: var(--sf-gray-200);
 }
 
@@ -181,7 +185,7 @@ body {
   background: white;
   border-bottom: 2px solid var(--sf-gray-200);
   position: sticky;
-  top: 64px;
+  top: 48px;
   z-index: 90;
   overflow-x: auto;
 }
